@@ -6,6 +6,12 @@ body {
     margin: 0;
     padding: 0;
     max-width: 100%;
+    background-color: #0d1117;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
 }
 
 ul {
@@ -17,18 +23,19 @@ a {
     text-decoration: none;
 }
 
-a span {
+.menu-element > a span {
     font-family: sans-serif;
     font-size: 30px;
-    color: #000000;
+    color: #ffffff;
     font-weight: 500;
 }
 
 .header {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    box-shadow: 0 2px 3px #a7a7a7;
+    background-color: #010409;
+    border-bottom: solid 1px #9e9d9d;
+    box-shadow: 0 2px 3px #0d1117;
 }
 
 .menu {
@@ -55,7 +62,7 @@ a span {
 }
 
 .humb-line {
-    background-color: #13121e;
+    background-color: #ffffff;
     width: 100%;
     height: 15%; 
 }
@@ -73,94 +80,106 @@ a span {
 }
 
 .rect-button-top {
-    width: 130px;
-    height: 50px;
+    width: 210px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: #a7a7a7;
-    transform: skew(50deg, -20deg);
-    transition: background-color 0.3s ease-in-out,  translate 0.3s ease-in-out;
+    transform: rotate(-30deg) skew(25deg);
+    box-shadow: -20px 20px 15px #202938;
+    transition: background-color 0.3s ease-in-out,  translate 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .rect-button-top > img {
-    width: 40px;
+    width: 45px;
+    filter: brightness(0);
+    transition: filter 0.3s ease-in-out;
 }
 
-.rect-button-top > span {
+.rect-button:hover > .rect-button-top img {
+    filter: brightness(1);
+}
+
+.rect-button-top span {
+    color: #000000;
     font-family: sans-serif;
     font-size: 20px;
+    transition: color 0.3s ease-in-out;
 }
 
-.rect-button-side-left {
-    width: 60px;
-    height: 25px;
-    transform: skew(0, 40deg);
+.rect-button:hover > .rect-button-top span {
+    color: #ffffff;
+}
+
+.rect-button-top:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 20px;
+    height: 100%;
     background-color: #6e6e6e;
-    position: relative;
-    left: -29.5px;
-    top: -1px;
-    transition: background-color 0.3s ease-in-out,  translate 0.3s ease-in-out;
+    transform: rotate(0) skewY(-45deg);
+    transition: background-color 0.3s ease-in-out
 }
 
-.rect-button-side-right {
-    width: 130px;
-    height: 25px;
-    transform: skew(0, -20deg);
+.rect-button-top:after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: -10px;
+    width: 100%;
+    height: 20px;
     background-color: #9e9d9d;
-    position: relative;
-    top: -24px;
-    left: 30.5px;
-    transition: background-color 0.3s ease-in-out, translate 0.3s ease-in-out;
+    transform: rotate(0) skewX(-45deg);
+    transition: background-color 0.3s ease-in-out
 }
 
-.rect-button:hover > .rect-button-top{
-    background-color: #229461;
+.rect-button:hover > .rect-button-top.git{
+    background-color: #229437;
+    box-shadow: -40px 40px 45px #202938;
     translate: 0 -25px;
 }
 
-.rect-button:hover > .rect-button-side-left{
-    background-color: #17432f;
-    translate: 0 -25px;
+.rect-button:hover > .rect-button-top.git:before{
+    background-color: #13511e;
 }
 
-.rect-button:hover > .rect-button-side-right{
-    background-color: #0f7446;
-    translate: 0 -25px;
+.rect-button:hover > .rect-button-top.git:after{
+    background-color: #1c782d;
 }
 
 .rect-button:hover > .rect-button-top.telegram{
     background-color: #1c90b7;
+    box-shadow: -40px 40px 45px #202938;
     translate: 0 -25px;
 }
 
-.rect-button:hover > .rect-button-side-left.telegram{
+.rect-button:hover > .rect-button-top.telegram:before{
     background-color: #0c3d4e;
-    translate: 0 -25px;
 }
 
-.rect-button:hover > .rect-button-side-right.telegram{
+.rect-button:hover > .rect-button-top.telegram:after{
     background-color: #176e8b;
-    translate: 0 -25px;
 }
 
 .rect-button:hover > .rect-button-top.gmail{
     background-color: #de4e00;
+    box-shadow: -40px 40px 45px #202938;
     translate: 0 -25px;
 }
 
-.rect-button:hover > .rect-button-side-left.gmail{
+.rect-button:hover > .rect-button-top.gmail:before{
     background-color: #753918;
-    translate: 0 -25px;
 }
 
-.rect-button:hover > .rect-button-side-right.gmail{
+.rect-button:hover > .rect-button-top.gmail:after{
     background-color: #ab4812;
-    translate: 0 -25px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     .header{
         height: 100px;
     }
@@ -176,7 +195,7 @@ a span {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .mobile {
         padding: 28px;
         display: flex;
