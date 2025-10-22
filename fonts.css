@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Jersey";
+    src: url("./fonts/Jersey_15/Jersey15-Regular.ttf");
+}
+
+:root {
+    --rect-button: "Jersey";
+}
