@@ -28,6 +28,11 @@ a {
     font-size: 30px;
     color: var(--text-primary-color);
     font-weight: 500;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.menu-element:hover > a span {
+    opacity: 0.6;
 }
 
 .header {
@@ -70,9 +75,21 @@ a {
     display: flex;
 }
 
+/*-----------------main-section-----------------*/
+
+
+/*-------------------about-section-----------------*/
+
+
+/*--------------------skills-section------------------*/
+
+
+/* ----------------projects-section---------------- */
+
+
 /* -----------rect buttons------------ */
 .rect-buttons {
-    padding-top: 50px;
+    padding-top: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
