@@ -3,6 +3,12 @@
     src: url("./fonts/Jersey_15/Jersey15-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
 :root {
     --rect-button: "Jersey";
+    --R-font: "Roboto";
 }
