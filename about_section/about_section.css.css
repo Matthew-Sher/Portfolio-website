@@ -1,0 +1,202 @@
+.tv-conteiner {
+    margin-top: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    z-index: 2;
+}
+
+.tv-one {
+    transform: rotateY(-10deg) ;
+    margin: 50px 0 0 100px;
+    padding: 0;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.tv-two {
+    transform: rotateY(10deg) ;
+    margin: 5px 100px 8px 0;
+    padding: 0;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.tv-three {
+    transform: rotateY(-10deg) ;
+    margin: 0 0 100px 100px;
+    padding: 0;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.tv-frame {
+    width: 400px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* border-radius: 20px; */
+    background-color: #7b3a12;
+}
+
+.tv-one > .side-panel {
+    width: 200px;
+    height: 317px;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    transform: rotateY(80deg) translateY(4px) translateX(93px);
+    background-color: #5c2c0e;
+}
+
+.tv-one > .bottom-panel {
+    width: 400px;
+    height: 97px;
+    position: absolute;
+    top: 270px;
+    left: 13px;
+    background-color: #44210b;
+    transform: rotateX(101deg) translateX(-0.5px) translateY(-49px) skewX(-15deg);
+}
+
+.tv-two > .left-side {
+    width: 100px;
+    height: 281.5px;
+    position: absolute;
+    top: 22px;
+    left: -75px;
+    transform: rotateY(106deg) translateX(-75px);
+    background-color: #5c2c0e;
+}
+
+.tv-three > .side-panel {
+    width: 200px;
+    height: 320px;
+    position: absolute;
+    top: -10.5px;
+    right: -100px;
+    transform: rotateY(77deg) translateX(96px) translateY(3px) skewY(-4deg);
+    background-color: #5c2c0e;
+}
+
+.tv-three > .top-panel {
+    width: 400px;
+    height: 130px;
+    position: absolute;
+    top: -67px;
+    left: 19px;
+    background-color: #44210b;
+    transform: rotateX(81deg) translateX(-1px) translateY(-57px) skewX(-16deg);
+}
+
+.tv-front-panel {
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    background-color: #43413f;
+    border: #a3a097 solid 2px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tv-screen-area {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tv-screen {
+    width: 90%;
+    height: 80%;
+    color: #1b1816;
+    box-sizing: border-box;
+    padding: 10px;
+    background: linear-gradient(350deg, #4f6266, #76a1aa, #518691);
+    border-radius: 30px;
+}
+
+.tv-right-panel {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tv-switches-panel {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #54504d;
+}
+
+.switch-one {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(270deg, #1b1816, #3b3632);
+    border-radius: 25px;
+    position: relative;
+    /* border-radius: 50px;
+    border-width: 5px;
+    border-image: linear-gradient(31deg, #1b1816, #3b3632) 1; */
+}
+
+.switch-one::before {
+    content: ' ';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background-color: #2d2925;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 25px;
+}
+
+.switch-two-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.switch-two {
+    width: 15px;
+    height: 40px;
+    background: linear-gradient(270deg, #1b1816, #3b3632);
+    position: relative;
+    /* border-radius: 50px;
+    border-width: 5px;
+    border-image: linear-gradient(31deg, #1b1816, #3b3632) 1; */
+}
+
+.switch-two::before {
+    content: ' ';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background: linear-gradient(0deg, #47413b, #2d2925);
+    top: 3px;
+    right: 1px;
+    bottom: 2px;
+}
+
+.tv-speaker {
+    width: 100%;
+    height: 25%;
+    background-color: #231f1c;
+    border: 2px solid #54504d;
+}
