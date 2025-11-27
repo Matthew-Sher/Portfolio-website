@@ -1,98 +1,98 @@
-.tv-conteiner {
-    margin-top: 500px;
+.tv-container {
+    margin-top: 4rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
-    perspective: 1000px;
+    perspective: 1700px;
     z-index: 2;
 }
 
 .tv-one {
-    transform: rotateY(-10deg) ;
-    margin: 50px 0 0 100px;
+    transform: rotateY(-10deg);
+    margin: 5rem 0 0 10rem;
     padding: 0;
     transform-style: preserve-3d;
     position: relative;
 }
 
 .tv-two {
-    transform: rotateY(10deg) ;
-    margin: 5px 100px 8px 0;
+    transform: rotateY(10deg);
+    margin: 1rem 10rem 0.8rem 0;
     padding: 0;
     position: relative;
     transform-style: preserve-3d;
 }
 
 .tv-three {
-    transform: rotateY(-10deg) ;
-    margin: 0 0 100px 100px;
+    transform: rotateY(-10deg);
+    margin: 0.5rem 0 10rem 10rem;
     padding: 0;
     position: relative;
     transform-style: preserve-3d;
 }
 
 .tv-frame {
-    width: 400px;
-    height: 320px;
+    width: 55rem;
+    height: 41rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     /* border-radius: 20px; */
-    background-color: #7b3a12;
+    background-color: #4c240c;
 }
 
 .tv-one > .side-panel {
-    width: 200px;
-    height: 317px;
+    width: 20rem;
+    height: 41rem;
     position: absolute;
     top: 0;
-    right: -100px;
-    transform: rotateY(80deg) translateY(4px) translateX(93px);
+    right: -10rem;
+    transform: rotateY(80deg) translateX(9.9rem);
     background-color: #5c2c0e;
 }
 
 .tv-one > .bottom-panel {
-    width: 400px;
-    height: 97px;
+    width: 55rem;
+    height: 8rem;
     position: absolute;
-    top: 270px;
-    left: 13px;
+    top: 36.6rem;
+    left: 1.6rem;
     background-color: #44210b;
-    transform: rotateX(101deg) translateX(-0.5px) translateY(-49px) skewX(-15deg);
+    transform: rotateX(101deg) translateY(-5rem) skewX(-21deg);
 }
 
 .tv-two > .left-side {
-    width: 100px;
-    height: 281.5px;
+    width: 10rem;
+    height: 38.7rem;
     position: absolute;
-    top: 22px;
-    left: -75px;
-    transform: rotateY(106deg) translateX(-75px);
+    top: 1.3rem;
+    left: -7.5rem;
+    transform: rotateY(106deg) translateX(-4.8rem);
     background-color: #5c2c0e;
 }
 
 .tv-three > .side-panel {
-    width: 200px;
-    height: 320px;
+    width: 20rem;
+    height: 41rem;
     position: absolute;
-    top: -10.5px;
-    right: -100px;
-    transform: rotateY(77deg) translateX(96px) translateY(3px) skewY(-4deg);
+    top: -0.7rem;
+    right: -10rem;
+    transform: rotateY(77deg) translateX(9.9rem) skewY(-4deg);
     background-color: #5c2c0e;
 }
 
 .tv-three > .top-panel {
-    width: 400px;
-    height: 130px;
+    width: 55rem;
+    height: 13rem;
     position: absolute;
-    top: -67px;
-    left: 19px;
+    top: -6.7rem;
+    left: 2.2rem;
     background-color: #44210b;
-    transform: rotateX(81deg) translateX(-1px) translateY(-57px) skewX(-16deg);
+    transform: rotateX(81deg) translateY(-5.7rem) skewX(-18deg);
 }
 
 .tv-front-panel {
@@ -102,8 +102,8 @@
     height: 95%;
     display: flex;
     flex-direction: row;
-    background-color: #43413f;
-    border: #a3a097 solid 2px;
+    background-color: #363433;
+    border: #797771 solid 2px;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -121,8 +121,11 @@
     color: #1b1816;
     box-sizing: border-box;
     padding: 10px;
-    background: linear-gradient(350deg, #4f6266, #76a1aa, #518691);
+    background: linear-gradient(350deg, #41543c, #7eaa76, #79ba7c);
     border-radius: 30px;
+    filter: brightness(1.7);
+    box-shadow: inset 0 0 10rem 4rem #a5baa2,
+                0 0 3rem 1rem #395d3b;
 }
 
 .tv-right-panel {
@@ -199,4 +202,8 @@
     height: 25%;
     background-color: #231f1c;
     border: 2px solid #54504d;
+}
+
+.side-panel, .left-side, .top-panel, .bottom-panel {
+    filter: brightness(0.5);
 }
