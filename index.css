@@ -195,6 +195,12 @@ a {
     padding: 4rem 0 0 0;
 }
 
+.screen-content-header-theme {
+    font-family: var(--R-font);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
 /*--------------------skills-section------------------*/
 
 

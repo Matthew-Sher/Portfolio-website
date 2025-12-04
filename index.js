@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
     }
 
     if (scrollScale > 100) {
-        opacityScale = (scrollScale - 100) / 600;
+        opacityScale = (scrollScale - 140) / 600;
         backgroundAbovePC.style.setProperty('opacity', opacityScale);
     } else {
         backgroundAbovePC.style.setProperty('opacity', '0');
