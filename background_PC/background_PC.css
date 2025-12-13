@@ -46,7 +46,7 @@
     background-image: url("../assets/Background_matrix/Pixel_matrix_2.png");
     filter: brightness(0) blur(1px);
     color: var(--bg-primary-color);
-    z-index: 1;
+    z-index: 2;
 }
 
 .inner-shadow {
