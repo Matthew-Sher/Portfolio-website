@@ -3,280 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./colors.css">
-    <link rel="stylesheet" href="./fonts.css">
-    <link rel="stylesheet" href="./background_PC/background_PC.css">
+    <title>Портфолио разработчика</title>
+    
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/sections.css">
     <link rel="stylesheet" href="./background_PC/pc-colors.css">
-    <link rel="stylesheet" href="./about_section/about_section_TVs.css">
-    <link rel="stylesheet" href="./about_section/about_section_content.css">
+    <link rel="stylesheet" href="./background_PC/background_PC.css">
 </head>
 <body>
-    <div id="animated-background">
-        <div class="background-glow"></div>
+        <div id="animated-background">
+            <div class="background-glow"></div>
 
-        <div id="background-pc-container">
-            <div class="front side">
-                <div class="first-part">
-                    <div class="pc-screen"></div>
-                    <div class="pc-button"></div>
+            <div id="background-pc-container">
+                <div class="front side">
+                    <div class="first-part">
+                        <div class="pc-screen"></div>
+                        <div class="pc-button"></div>
+                    </div>
+                    <div class="second-part"></div>
+                    <div class="third-part"></div>
+                    <div class="fourth-part"></div>
                 </div>
-                <div class="second-part"></div>
-                <div class="third-part"></div>
-                <div class="fourth-part"></div>
+                <div class="back side">
+                    <div class="first-part"></div>
+                    <div class="second-part"></div>
+                    <div class="third-part"></div>
+                    <div class="fourth-part"></div>
+                </div>
+                <div class="left side">
+                    <div class="first-part"></div>
+                    <div class="second-part"></div>
+                    <div class="third-part"></div>
+                    <div class="fourth-part"></div>
+                </div>
+                <div class="right side">
+                    <div class="first-part"></div>
+                    <div class="second-part"></div>
+                    <div class="third-part"></div>
+                    <div class="fourth-part"></div>
+                </div>
+                <div class="top side">
+                    <div class="first-part"></div>
+                    <div class="second-part"></div>
+                    <div class="third-part"></div>
+                </div>
+                <div class="bottom side">
+                    <div class="first-part"></div>
+                    <div class="second-part"></div>
+                </div>
             </div>
-            <div class="back side">
-                <div class="first-part"></div>
-                <div class="second-part"></div>
-                <div class="third-part"></div>
-                <div class="fourth-part"></div>
-            </div>
-            <div class="left side">
-                <div class="first-part"></div>
-                <div class="second-part"></div>
-                <div class="third-part"></div>
-                <div class="fourth-part"></div>
-            </div>
-            <div class="right side">
-                <div class="first-part"></div>
-                <div class="second-part"></div>
-                <div class="third-part"></div>
-                <div class="fourth-part"></div>
-            </div>
-            <div class="top side">
-                <div class="first-part"></div>
-                <div class="second-part"></div>
-                <div class="third-part"></div>
-            </div>
-            <div class="bottom side">
-                <div class="first-part"></div>
-                <div class="second-part"></div>
+            <div class="background-glow-after-scroll"></div>
+            <div class="inner-shadow"></div>
+        </div>
+    <!-- Обложка (Hero секция) -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="typing name">
+                        Матвей Шерозия
+                </h1>
+                <p class="hero-title">Frontend Developer</p>
             </div>
         </div>
-        <div class="background-glow-after-scroll"></div>
-        <div class="inner-shadow"></div>
-    </div>
+    </section>
 
-    <main>
-        <section id="main-section" class="wrapper">
-            <div class="column-container">
-                <div class="name-container on-top">
-                    <h1 class="typing name">
-                        Матвей Шерозия
-                    </h1>
+    <!-- Опыт работы -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Опыт работы</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3>Senior Frontend Developer</h3>
+                    <p class="company">TechCorp · 2022 - настоящее время</p>
+                    <p>Разработка сложных веб-приложений на React, оптимизация производительности</p>
                 </div>
-                <div class="bottom-pointer blinking on-top">
-                    Мой опыт работы
-                </div>
-            </div>
-        </section>
-
-        <section id="about-section" class="wrapper">
-            <h2 class="secondary-title on-top">
-                <span class="blinking">Опыт работы</span>
-            </h2>
-
-            <div class="about-section-content-container">
-                <div class="tv-container">
-                    <div class="tv-one">
-                        <div class="tv-frame">
-                            <div class="tv-front-panel">
-                                <div class="tv-screen-area">
-                                    <div class="tv-screen">
-                                        <!-- <div class="screen-content-">
-                                            <div class="screen-content-header">
-                                                
-                                                <span class="screen-content-header-theme">
-                                                    РГРТУ им. В.Ф. Уткина
-                                                </span>
-                                            </div>
-                                            <div class="screen-content-description">
-                                                <span>
-                                                    Обучение в Рязанском государственном радиотехническом университете на 
-                                                    факультете вычислительной техники по направлению "Прикладная информатика".
-                                                </span>
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="tv-right-panel">
-                                    <div class="tv-switches-panel">
-                                        <div class="switch-one"></div>
-                                        <div class="switch-one"></div>
-                                        <div class="switch-two-container">
-                                            <div class="switch-two"></div>
-                                            <div class="switch-two"></div>
-                                            <div class="switch-two"></div>
-                                        </div>
-                                    </div>
-                                    <div class="tv-speaker"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="side-panel"></div>
-                        <div class="bottom-panel"></div>
-                    </div>
-                    <div class="tv-two">
-                        <div class="tv-frame">
-                            <div class="tv-front-panel">
-                                <div class="tv-screen-area">
-                                    <div class="tv-screen">
-                                        <div class="screen-content-header">
-
-                                        </div>
-                                        <div class="screen-content-">
-
-                                        </div>
-                                        <div class="screen-content-description">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tv-right-panel">
-                                    <div class="tv-switches-panel">
-                                        <div class="switch-one"></div>
-                                        <div class="switch-one"></div>
-                                        <div class="switch-two-container">
-                                            <div class="switch-two"></div>
-                                            <div class="switch-two"></div>
-                                            <div class="switch-two"></div>
-                                        </div>
-                                    </div>
-                                    <div class="tv-speaker"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="left-side"></div>
-                    </div>
-                    <div class="tv-three">
-                        <div class="tv-frame">
-                            <div class="tv-front-panel">
-                                <div class="tv-screen-area">
-                                    <div class="tv-screen">
-                                        <div class="screen-content-header">
-
-                                        </div>
-                                        <div class="screen-content-">
-
-                                        </div>
-                                        <div class="screen-content-description">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tv-right-panel">
-                                    <div class="tv-switches-panel">
-                                        <div class="switch-one"></div>
-                                        <div class="switch-one"></div>
-                                        <div class="switch-two-container">
-                                            <div class="switch-two"></div>
-                                            <div class="switch-two"></div>
-                                            <div class="switch-two"></div>
-                                        </div>
-                                    </div>
-                                    <div class="tv-speaker"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="top-panel"></div>
-                        <div class="side-panel"></div>
-                    </div>
-                </div>
-                <div class="pixel-matrix"></div>
-                <div class="about-screens-container">
-                    <div class="tv-one">
-                        <div class="content-frame">
-                            <div class="content-front-panel">
-                                <div class="tv-screen-area">
-                                    <div class="content-screen">
-                                        
-                                    </div>
-                                </div>
-                                <div class="tv-right-panel"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tv-two">
-                        <div class="content-frame">
-                            <div class="content-front-panel">
-                                <div class="tv-screen-area">
-                                    <div class="content-screen">
-                                    
-                                    </div>
-                                </div>
-                                <div class="tv-right-panel"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tv-three">
-                        <div class="content-frame">
-                            <div class="content-front-panel">
-                                <div class="tv-screen-area">
-                                    <div class="content-screen">
-                                        
-                                    </div>
-                                </div>
-                                <div class="tv-right-panel"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="experience-card">
+                    <h3>Frontend Developer</h3>
+                    <p class="company">WebStudio · 2020 - 2022</p>
+                    <p>Создание адаптивных интерфейсов, интеграция с REST API</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="skills-section" class="wrapper on-top">
-            <h2 class="secondary-title">
-                <span class="blinking">Навыки и стек</span>
-            </h2>
-
-            <div class="skills-section-conainer">
-                <div class="skills-content-sector">
-
-                </div>
-                <div class="skills-content-sector">
-
-                </div>
-                <div class="skills-content-sector">
-
-                </div>
+    <!-- Стек технологий -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Стек технологий</h2>
+            <div class="tech-stack-chaos-container">
+                <div class="tech-item chaos-1" data-tech="JavaScript">JS</div>
+                <div class="tech-item chaos-2" data-tech="HTML">HTML</div>
+                <div class="tech-item chaos-3" data-tech="CSS">CSS</div>
+                <div class="tech-item chaos-4" data-tech="React">React</div>
+                <div class="tech-item chaos-5" data-tech="Git">Git</div>
+                <div class="tech-item chaos-6" data-tech="DevTools">Google DevTools</div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact-section" class="wrapper">
-            <!-- <div class="rect-buttons">
-                <a class="rect-button" href="https://github.com/Matthew-Sher">
-                    <div class="rect-button-top git">
-                        <img src="./assets/Git icons/icons8-github-90-white.svg" />
-                        <span>Github</span>
-                    </div>
-                    <div class="rect-button-side-left git"></div>
-                    <div class="rect-button-side-right git"></div>
-                </a>
+    <!-- Контактная информация -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-grid">
+                <a href="mailto:ivan.petrov@example.com" class="contact-item">ivan.petrov@example.com</a>
+                <a href="tel:+71234567890" class="contact-item">+7 (123) 456-78-90</a>
+                <a href="#" class="contact-item" target="_blank">GitHub</a>
+                <a href="#" class="contact-item" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
 
-                <a class="rect-button" href="https://t.me/Gomaruz">
-                    <div class="rect-button-top telegram">
-                        <img src="./assets/Telegram icons/icons8-телеграм-white.svg" />
-                        <span>Telegram</span>
-                    </div>
-                    <div class="rect-button-side-left telegram"></div>
-                    <div class="rect-button-side-right telegram"></div>
-                </a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Иван Петров. Все права защищены.</p>
+        </div>
+    </footer>
 
-                <a class="rect-button" href="mailto:gomaruz75@gmail.com">
-                    <div class="rect-button-top gmail">
-                        <img src="./assets/Gmail icon/at-symbol-svgrerpo-com-white.svg" />
-                        <span>Gmail</span>
-                    </div>
-                    <div class="rect-button-side-left gmail"></div>
-                    <div class="rect-button-side-right gmail"></div>
-                </a>
-            </div> -->
-        </section>
-    </main>
-
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./background_PC/PC_sides_Z_index.js"></script>
 </body>
 </html>

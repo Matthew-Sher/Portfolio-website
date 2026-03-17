@@ -1,0 +1,22 @@
+:root {
+    /* Основные цвета фона */
+    --bg-primary-color: #0D1117;
+    --bg-secondary-color: #161B22;
+    --bg-glow-color: #1a3219;
+    --bg-outer-shadow: #070708;
+    
+    /* Цвета текста */
+    --text-primary-color: #F0F6FC;
+    --text-secondary-color: #8B949E;
+    
+    /* Акцентные цвета */
+    --acent-primary-color: #1bd330;
+    --acсent-secondary-color: #3FB950;
+    
+    /* Дополнительные цвета */
+    --back-stripe: #00000070;
+    
+    /* Системные цвета */
+    --card-bg: rgba(22, 27, 34, 0.7);
+    --border-color: rgba(59, 185, 80, 0.2);
+}
