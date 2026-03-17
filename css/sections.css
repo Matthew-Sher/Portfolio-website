@@ -16,14 +16,11 @@
 
 .name{
     padding: 0 0.5rem;
+    font-size: 4rem;
     font-weight: 700;
     color: var(--acent-primary-color);
-    text-align: center;
-}
-
-.name {
-    font-size: 4rem;
     background-color: var(--back-stripe);
+    text-align: center;
 }
 
 .typing {
@@ -351,6 +348,9 @@
 
 /* Медиа-запросы */
 @media (max-width: 768px) {
+    .name {
+        font-size: 2.3rem;
+    }
     
     .section-title {
         font-size: 2rem;
@@ -405,6 +405,14 @@
         top: 25%;
         left: 25%;
     }
+
+    @keyframes typing {
+    from {
+        width: 0;
+    } to {
+        width: 21rem;
+    }
+}
 }
 
 @media (max-width: 480px) {
