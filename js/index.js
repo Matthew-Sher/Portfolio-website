@@ -78,52 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Эффект параллакса при движении мыши
-const techContainer = document.querySelector('.tech-stack-chaos-container');
-if (techContainer) {
-    techContainer.addEventListener('mousemove', (e) => {
-        const items = document.querySelectorAll('.tech-item');
-        const mouseX = e.clientX / window.innerWidth - 0.5;
-        const mouseY = e.clientY / window.innerHeight - 0.5;
-        
-        items.forEach(item => {
-            const depth = parseFloat(item.getAttribute('data-depth') || '0.1');
-            const moveX = mouseX * 30 * depth;
-            const moveY = mouseY * 30 * depth;
-            
-            // Сохраняем оригинальную трансформацию
-            const currentTransform = window.getComputedStyle(item).transform;
-            if (!item.matches(':hover')) {
-                item.style.transform += ` translate(${moveX}px, ${moveY}px)`;
-            }
-        });
-    });
-    
-    techContainer.addEventListener('mouseleave', () => {
-        const items = document.querySelectorAll('.tech-item');
-        items.forEach(item => {
-            // Сбрасываем дополнительное смещение
-            const originalTransform = item.style.transform.replace(/translate\([^)]+\)/, '');
-            item.style.transform = originalTransform;
-        });
-    });
-}
-
-let apearence = function (objectToApear, scrollScale, pointOfApearence) {
-    if (scrollScale > pointOfApearence) {
-        objectToApear.classList.add('animated-apearence');
-        setTimeout(() => {
-            objectToApear.style.setProperty('opacity', '1');
-        }, 600);
-    } else {
-        objectToApear.style.setProperty('opacity', '0');
-        objectToApear.classList.remove('animated-apearence');
-    }
-};
-
 window.addEventListener('scroll', () => {
     let scrollScale = document.documentElement.scrollTop;
     let backgroundAbovePC = document.querySelector('.background-glow-after-scroll');
+    console.log(backgroundAbovePC);
 
     if (scrollScale > 100) {
         opacityScale = (scrollScale - 140) / 600;
