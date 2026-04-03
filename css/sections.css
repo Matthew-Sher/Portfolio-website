@@ -99,15 +99,15 @@
 
 .tech-item {
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--bg-primary-color);
     text-align: center;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: var(--text-primary-color);
     border: 1px solid var(--border-color);
@@ -126,7 +126,7 @@
 
 .chaos-2 {
     top: 15%;
-    right: 10%;
+    right: 7%;
     transform: rotate(8deg);
 }
 
@@ -137,34 +137,77 @@
 }
 
 .chaos-4 {
-    top: 40%;
-    right: 20%;
+    top: 66%;
+    right: 30%;
     transform: rotate(15deg);
 }
 
 .chaos-5 {
-    bottom: 5%;
+    bottom: 50%;
     right: 30%;
     transform: rotate(-8deg);
 }
 
 .chaos-6 {
-    top: 25%;
-    left: 30%;
+    top: 10%;
+    left: 32%;
     transform: rotate(10deg);
 }
 
 /* Эффекты при наведении */
 .tech-item:hover {
     transform: scale(1.1) rotate(0deg);
-    border-color: var(--acent-primary-color);
-    box-shadow: 
-        0 0 30px var(--acent-primary-color),
-        0 0 60px var(--acent-primary-color),
-        0 0 90px var(--acent-primary-color);
-    background: var(--bg-secondary-color);
     z-index: 10;
     transition: all 0.2s ease;
+    background: var(--bg-secondary-color);
+}
+
+#tech-item-JS:hover {
+    border-color: var(--JS-shadow-first);
+    box-shadow: 
+        1rem 0 30px var(--JS-shadow-first),
+        -0.5rem 0.86rem 30px var(--JS-shadow-second),
+        -0.5rem -0.86rem 30px var(--JS-shadow-third);
+}
+
+#tech-item-HTML:hover {
+    border-color: var(--HTML-shadow-first);
+    box-shadow: 
+        1rem 0 30px var(--HTML-shadow-first),
+        -0.5rem 0.86rem 30px var(--HTML-shadow-second),
+        -0.5rem -0.86rem 30px var(--HTML-shadow-third);
+}
+
+#tech-item-CSS:hover {
+    border-color: var(--CSS-shadow-first);
+    box-shadow: 
+        1rem 0 30px var(--CSS-shadow-first),
+        -0.5rem 0.86rem 30px var(--CSS-shadow-second),
+        -0.5rem -0.86rem 30px var(--CSS-shadow-third);
+}
+
+#tech-item-React:hover {
+    border-color: var(--React-shadow-first);
+    box-shadow: 
+        1rem 0 30px var(--React-shadow-first),
+        -0.5rem 0.86rem 30px var(--React-shadow-second),
+        -0.5rem -0.86rem 30px var(--React-shadow-third);
+}
+
+#tech-item-Git:hover {
+    border-color: var(--Git-shadow-first);
+    box-shadow: 
+        1rem 0 30px var(--Git-shadow-first),
+        -0.5rem 0.86rem 30px var(--Git-shadow-second),
+        -0.5rem -0.86rem 30px var(--Git-shadow-third);
+}
+
+#tech-item-DevTools:hover {
+    border-color: var(--bg-primary-color);
+    box-shadow:
+        1.2rem 0 3rem var(--DevTools-shadow-first),
+        -0.7rem 1.1rem 3rem var(--DevTools-shadow-second),
+        -0.7rem -1.1rem 3rem var(--DevTools-shadow-third);
 }
 
 /* Анимация парящего эффекта для каждого блока */

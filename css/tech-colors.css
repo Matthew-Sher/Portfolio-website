@@ -1,0 +1,20 @@
+:root {
+    --JS-shadow-first: #e5ff0050;
+    --JS-shadow-second: #ffdd0050;
+    --JS-shadow-third: #ff9d0050;
+    --HTML-shadow-first: #ff880050;
+    --HTML-shadow-second: #c44e0050;
+    --HTML-shadow-third: #cc620050;
+    --CSS-shadow-first: #08007a50;
+    --CSS-shadow-second: #0044ff50;
+    --CSS-shadow-third: #007bff50;
+    --React-shadow-first: #00e5ff50;
+    --React-shadow-second: #00ffbf50;
+    --React-shadow-third: #23b6c350;
+    --Git-shadow-first: #1aff0050;
+    --Git-shadow-second: #01b22750;
+    --Git-shadow-third: #55f54d50;
+    --DevTools-shadow-first: #f0fc0050;
+    --DevTools-shadow-second: #f0350750;
+    --DevTools-shadow-third: #1470f150;
+}
